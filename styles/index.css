@@ -1,0 +1,133 @@
+.source-sans-3-medium {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+.baloo-2-bold {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  h3 {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+  }
+
+  nav li {
+
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    }
+
+    .nav__links {
+        margin: right;
+    }
+
+a {
+    text-decoration: none;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+
+}
+
+    a:hover {
+        color: rgb(70, 96, 134);
+      }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+.main_container {
+display: block;
+max-width: 574px;
+}
+  
+
+
+    /* desktop view --------------------- */
+
+        @media screen and (min-width: 1000px) {
+
+            .Main__Headline
+            {font-size: 90px;}  
+            .burger {
+                display: none;
+              }
+        }
+        
+
+    /* tablet view --------------------- */
+
+    @media screen and (max-width: 1000px) {
+        .Main__Headline
+             {font-size: 72px;}  
+        .burger {
+            display: none;
+          }
+    }
+    
+  
+
+/* mobile view -------------------- */
+
+    @media screen and (max-width: 768px) { 
+        div.nav__links {
+        display: none;
+     }
+     .Main__Headline {
+        font-size: 36px;
+     }
+     .burger {
+        display: block;
+      }
+      .header {
+          flex-direction: column;
+          padding: 20px;
+        }
+    }
+    
+
+   
+
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+      }
