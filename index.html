@@ -14,18 +14,20 @@
     <header>
 
         <nav>
-            <div class="nav__logo"><h3>Head</h3></div>
-        <div class="nav__links">
-                <ul>
-                    <li><a href="default.asp">Works</a></li>
-                    <li><a href="news.asp">Services</a></li>
-                    <li><a href="contact.asp">Contacts</a></li>
-                </ul> 
-        </div>
-        <div class="burger">
-                <svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"> <circle cx="2.5" cy="8" r=".75"></circle> <circle cx="8" cy="8" r=".75"></circle> <circle cx="13.5" cy="8" r=".75"></circle> </svg>
-        <i class="fa-solid fa-ellipsis"></i>
-        </div>
+            
+                <div class="nav__logo"><h3>Head</h3></div>
+            <div class="nav__links">
+                    <ul>
+                        <li><a href="default.asp">Works</a></li>
+                        <li><a href="news.asp">Services</a></li>
+                        <li><a href="contact.asp">Contacts</a></li>
+                    </ul> 
+            </div>
+            <div class="burger">
+                    <svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"> <circle cx="2.5" cy="8" r=".75"></circle> <circle cx="8" cy="8" r=".75"></circle> <circle cx="13.5" cy="8" r=".75"></circle> </svg>
+            <!-- <i class="fa-solid fa-ellipsis"></i> -->
+            </div>
+           
 
         
         </nav>
@@ -33,15 +35,21 @@
     </header>
     <main>
 
-           <div class="main__container">
-                <h1 class="Main__Headline">Patagonia</h1>
-    
-                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+          <section>
+            
+               <div class="main__container">
+                    <div class="main_text">
+                        <h1 class="Main__Headline">Patagonia</h1>
+            
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. <br> Donec viverra eleifend lacus, vitae ullamcor.</p>
+                    </div>
+          </section>
+         
                 <div class="main_image">
                         <picture>
-                            <source media="(min-width:1000px)" srcset="/images/desktop_img.jpg">
-                            <source media="(max-width:1000px)" srcset="/images/tablet_img.jpg">
-                            <source media="(max-width:768px)" srcset="/images/mobile_img.jpg">
+                            <source media="(min-width:1000px)" srcset="/images/desktop_img.jpg" width="864px">
+                            <source media="(max-width:1000px)" srcset="/images/tablet_img.jpg" width="617px">
+                            <source media="(max-width:768px)" srcset="/images/mobile_img.jpg" width="256px">
                             <img src="/images/tablet_img.jpg" alt="Flowers" style="width:auto;">
                         </picture> 
                 </div>
@@ -52,4 +60,4 @@
 </html>
 
 
-<i class="fa-solid fa-ellipsis"></i>
+<!-- <i class="fa-solid fa-ellipsis"></i> -->

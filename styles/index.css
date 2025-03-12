@@ -17,6 +17,23 @@
     font-style: normal;
   }
 
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px; */
+  }
+
   h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -39,21 +56,28 @@
   nav {
     display: flex;
     flex-direction: row;
-    align-content: baseline;
     justify-content: space-between;
+    align-content: center;
     margin: 20px;
+    max-height: 60px;
   }
 
-  nav li {
 
+
+  nav li {
     display: inline-block;
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #fff;
     }
 
     .nav__links {
         margin: right;
+    }
+
+    .nav__logo {
+        display: inline-block;
+        padding: 10px;
+        margin-left: 10px;
     }
 
 a {
@@ -71,15 +95,13 @@ a {
 
   main {
     display: flex;
-    /* justify-content: center; */
     text-align: center;
+    height: auto;
+    width: 100%;
+    
+    
   }
 
-.main_container {
-display: block;
-max-width: 574px;
-}
-  
 
 
     /* desktop view --------------------- */
@@ -91,7 +113,17 @@ max-width: 574px;
             .burger {
                 display: none;
               }
+              .main__container {
+                display: block;
+                }
+                .main__text {
+                    text-wrap: 100px;
+                    
+                    }
+                main {
+                    margin-top: 40px;
         }
+    }
         
 
     /* tablet view --------------------- */
@@ -111,26 +143,27 @@ max-width: 574px;
     @media screen and (max-width: 768px) { 
         div.nav__links {
         display: none;
-     }
-     .Main__Headline {
-        font-size: 36px;
-     }
-     .burger {
-        display: block;
-      }
-      .header {
-          flex-direction: column;
-          padding: 20px;
         }
+        .Main__Headline {
+            font-size: 36px;
+        }
+        .burger {
+            display: block;
+            justify-self: right;      }
+        .header {
+            flex-direction: column;
+            padding: 20px;
+            }
+        nav {
+                display: flex;
+                align-content: end;
+            }  
+        p {
+                font-size: 18px;
+            }
+        
     }
     
 
    
 
-    /* .header {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 60px;
-      } */
